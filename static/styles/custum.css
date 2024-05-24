@@ -1,0 +1,41 @@
+.navigation .primary .drop > span {
+  display: block;
+  position: relative;
+  /* background-color: #e0dfdf; */
+  padding: 12px 38px 12px 17px;
+  cursor: pointer;
+}
+.navigation .primary .drop > span:after {
+  position: absolute;
+  z-index: 1;
+  content: "\e901";
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 5px;
+  top: calc(50% - 1px);
+  right: 20px;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.navigation .primary .drop:hover > span {
+  background-color: #276fdb;
+  color: #fff;
+}
+.navigation .primary .drop:hover > span::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
